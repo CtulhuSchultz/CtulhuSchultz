@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @CtulhuSchultz
+- 👀 I’m interested in automation and learning to program all kinds of stuff
+- 🌱 I’m currently learning python but I'm interested in any other language
+- 💞️ I’m looking to collaborate on automation projects or simple automation of tasks
+- 📫 How to reach me Ctulhu.Schultz@gmail.com
