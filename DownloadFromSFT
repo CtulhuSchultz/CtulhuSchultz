@@ -1,0 +1,30 @@
+import os, time, ftplib
+
+#SFT information
+ftp = ftplib.FTP("FTP.COM")
+ftp.login("user","password")
+ftp.cwd("Folder")
+
+savedir = ("Local folder")
+os.chdir(savedir)
+
+#Name of the file
+file_year = time.strftime("%y") 
+file_month = time.strftime("%m")
+file_day = time.strftime("%d")
+file_hour = "07"
+file_minute = "00"
+file_second = time.strftime("%Y")
+file_extension = ".txt"
+
+
+fnbase = file_year + file_month + file_day + file_hour + file_minute
+fnmid = file_second
+fnend = file_extension
+
+fn = fnbase + fnmid + fnend
+
+file = open (fn,"wb")
+ftp.retrbinary ("RETR " + fn, file.write)
+file.close(fn)
+ftp.cwd("../")
